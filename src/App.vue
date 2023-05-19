@@ -67,6 +67,7 @@ import SideInfo from "./components/SideInfo.vue";
 import AdaptiveTextBox from "./components/AdaptiveTextBox.vue";
 import ApplicationCard from "./components/ApplicationCard.vue";
 import axios from "axios";
+import DevicePixelRatio from "./utils/DevicePixelRatio.js";
 
 export default {
   components: {
@@ -114,6 +115,9 @@ export default {
     if (this.timer) {
       clearInterval(this.timer)
     }
+  },
+  created() {
+    new DevicePixelRatio().init();
   },
   methods: {
     jsonInit() {
@@ -188,35 +192,35 @@ export default {
 }
 
 .side-info {
-  bottom: 60px;
-  left: 30px;
+  bottom: 3.75rem;
+  left: 1.875rem;
 }
 
 .header {
-  height: 64px;
+  height: 4rem;
 }
 
 .footer {
-  height: 32px
+  height: 2rem;
 }
 
 .content {
-  height: calc(100% - 96px);
+  height: calc(100% - 6rem);
 }
 
 .main {
   height: 100%;
-  margin: 0 108px;
+  margin: 0 6.75rem;
   display: flex;
 }
 
 .column-1 {
   width: 35%;
-  margin: 32px;
+  margin: 2rem;
 }
 
 .page-title {
-  margin: 48px 0 24px 0;
+  margin: 3rem 0 24px 0;
   width: 100%;
   height: 18%;
   text-align: center;
@@ -229,7 +233,7 @@ export default {
 
 .page-subtitle {
   height: 40%;
-  margin-bottom: 16px;
+  margin-bottom: 1.5rem;
 }
 
 #page-subtitle-content {
@@ -239,8 +243,8 @@ export default {
 }
 
 .quoter-subtitle {
-  height: 48px;
-  width: 48px;
+  height: 3rem;
+  width: 3rem;
 }
 
 .quoter-subtitle img {
@@ -251,25 +255,25 @@ export default {
 
 .quoter-left {
   align-self: flex-start;
-  margin-top: 8px;
-  margin-left: 8px;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
   user-select: none;
 }
 
 .quoter-right {
   align-self: flex-end;
-  margin-bottom: 8px;
-  margin-right: 8px;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
   user-select: none;
 }
 
 #page-subtitle-content-text {
   flex-grow: 1;
-  margin: 24px;
+  margin: 1.5rem;
 }
 
 .page-media {
-  margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
 .column-2 {
@@ -278,8 +282,8 @@ export default {
 }
 
 .page-control {
-  height: 200px;
-  margin-top: 64px;
+  height: 24%;
+  margin-top: 1.5rem;
   display: flex;
 }
 
@@ -289,7 +293,7 @@ export default {
 }
 
 .page-sub-wrap {
-  margin: 12px 24px;
+  margin: 0.75rem 1.5rem;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -322,7 +326,7 @@ export default {
 
 .page-project {
   width: auto;
-  height: calc(100% - 264px);
+  height: 76%;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(4, 1fr);
