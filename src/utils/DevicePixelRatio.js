@@ -12,16 +12,17 @@ class DevicePixelRatio {
   _addHandler(element, type, handler) {
     if (element.addEventListener) {
       element.addEventListener(type, handler, false);
-    } else if (element.attachEvent) {
-      element.attachEvent("on" + type, handler);
-    } else {
-      element["on" + type] = handler;
+    } else { // noinspection JSUnresolvedReference
+      if (element.attachEvent) {
+            element.attachEvent("on" + type, handler);
+          } else {
+            element["on" + type] = handler;
+          }
     }
   }
 
   _correct() {
-    let t = this;
-    // 页面devicePixelRatio（设备像素比例）变化后，计算页面body标签zoom修改其大小，来抵消devicePixelRatio带来的变化。
+// 页面devicePixelRatio（设备像素比例）变化后，计算页面body标签zoom修改其大小，来抵消devicePixelRatio带来的变化。
     document.getElementsByTagName("body")[0].style.zoom = 1 / window.devicePixelRatio;
   }
 

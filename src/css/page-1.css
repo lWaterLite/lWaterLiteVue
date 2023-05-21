@@ -1,0 +1,156 @@
+.page-1 .fixed-element {
+  position: absolute;
+}
+
+.page-1 .upper-button {
+  bottom: 0;
+  height: 3rem;
+  width: 3rem;
+}
+
+.page-1 .upper-button img {
+  object-fit: contain;
+  width: 100vw;
+  height: 100vh;
+}
+
+.page-1 .container {
+  height: 100%;
+  width: 100%;
+}
+
+.page-1 .header {
+  height: 5%;
+}
+
+.page-1 .content {
+  height: 87%;
+  padding: 0 5%;
+  display: flex;
+}
+
+.page-1 .footer {
+  height: 8%;
+  display: flex;
+  justify-content: center;
+}
+
+.page-1 .column-1 {
+  width: 35%;
+  margin: 2rem;
+}
+
+.page-1 .page-title {
+  margin: 3rem 0 24px 0;
+  width: 100%;
+  height: 18%;
+  text-align: center;
+  line-height: 18%;
+  user-select: none;
+}
+
+.page-1 #web-title img {
+  vertical-align: middle;
+}
+
+.page-1 .page-subtitle {
+  height: 40%;
+  margin-bottom: 1.5rem;
+}
+
+.page-1 #page-subtitle-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-1 .quoter-subtitle {
+  height: 3rem;
+  width: 3rem;
+}
+
+.page-1 .quoter-subtitle img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.page-1 .quoter-left {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  user-select: none;
+}
+
+.page-1 .quoter-right {
+  align-self: flex-end;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  user-select: none;
+}
+
+.page-1 #page-subtitle-content-text {
+  flex-grow: 1;
+  margin: 1.5rem;
+}
+
+.page-1 .page-media {
+  margin-left: 1.5rem;
+}
+
+.page-1 .column-2 {
+  margin-top: 3rem;
+  width: 100%;
+  display: block;
+}
+
+.page-1 .page-control {
+  height: 30%;
+  display: flex;
+}
+
+.page-1 .page-sub-block {
+  flex-grow: 1;
+  position: relative;
+}
+
+.page-1 .page-sub-wrap {
+  margin: 0.75rem 1.5rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-1 .page-clock {
+  text-align: center;
+  color: white;
+  display: flex;
+  user-select: none;
+}
+
+.page-1 .quoter-famous {
+  height: 32px;
+  width: 32px;
+}
+
+.page-1 .quoter-famous img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.page-1 .page-famous-text {
+  flex-grow: 1;
+}
+
+.page-1 .page-project {
+  height: 70%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4% 3%;
+}

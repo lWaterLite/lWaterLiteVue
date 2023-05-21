@@ -45,6 +45,7 @@ li {
   display: inline;
   float: left;
   list-style: none;
+  user-select: none;
 }
 
 li div {

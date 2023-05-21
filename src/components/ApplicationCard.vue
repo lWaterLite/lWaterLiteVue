@@ -51,6 +51,7 @@ export default defineComponent({
   border-radius: 8px;
   background: rgba(25, 25, 25, 0.3);
   cursor: pointer;
+  user-select: none;
 }
 
 .default {

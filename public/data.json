@@ -42,6 +42,10 @@
     {
       "icoUrl": "/media/steam.png",
       "naviUrl": "https://steamcommunity.com/id/lwaterlite"
+    },
+    {
+      "icoUrl": "/media/email.png",
+      "naviUrl": "mailto:lwaterlite@126.com"
     }],
   "famous": [
     {
@@ -74,6 +78,10 @@
     },
     {
       "text": "我忘记了所有悲剧，\n所见皆是奇迹。\n-《空洞骑士》",
+      "fontSize": 24
+    },
+    {
+      "text": "Long may the sunshine!\n-《黑暗之魂3》",
       "fontSize": 24
     }
   ],

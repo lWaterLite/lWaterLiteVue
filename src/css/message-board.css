@@ -1,0 +1,22 @@
+.message-board .header {
+  height: 8%;
+  display: flex;
+  justify-content: center;
+}
+
+.message-board .content {
+  margin: 0 25%;
+}
+
+.message-board .commit-box {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.message-board .commit-list > *{
+  margin-bottom: 8px;
+}
+
+.message-board .commit-list:last-child {
+  margin-bottom: 0;
+}

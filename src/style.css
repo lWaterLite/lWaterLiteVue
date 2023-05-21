@@ -1,6 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
+  overflow-y: hidden;
 }
 
 #app {
@@ -16,7 +22,47 @@ body {
   background: rgba(25, 25, 25, 0.3);
 }
 
+.fixed-element {
+  position: absolute;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-size: 100%;
+  opacity: 0.5;
+}
+
 @font-face {
   font-family: 'Digital7';
   src: url("./font/digital-7-4.ttf");
+}
+
+.page-button {
+  display: flex;
+  align-items: center;
+  width: auto;
+  user-select: none;
+}
+
+.page-button img {
+  object-fit: contain;
+  height: 70%;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.page-button img:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
 }
