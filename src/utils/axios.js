@@ -1,3 +1,3 @@
-const axiosPrefix = "http://localhost:8000/api"
+const axiosPrefix = "http://lwaterlite.cc/api"
 
 export default axiosPrefix
