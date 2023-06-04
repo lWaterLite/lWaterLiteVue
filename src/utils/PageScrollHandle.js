@@ -13,7 +13,6 @@ export function pageScrollHandle(index) {
 }
 
 export function wheelScrollHandle(e, index) {
-  console.log(index)
   if (e.deltaY > 0) {
     if (index !== pageCount) {
       pageScrollHandle(index + 1)
