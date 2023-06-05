@@ -26,9 +26,11 @@ export default defineComponent({
   <div class="media-list-wrap">
     <ul>
       <li v-for="media in mediaList">
-        <div @click="naviToMedia(media.naviUrl)">
-          <img :src="media.icoUrl" :alt="media.icoUrl"/>
-        </div>
+        <a :href="media.naviUrl">
+          <div @click="naviToMedia(media.naviUrl)">
+            <img :src="media.icoUrl" :alt="media.icoUrl"/>
+          </div>
+        </a>
       </li>
     </ul>
   </div>

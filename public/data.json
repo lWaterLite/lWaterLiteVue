@@ -105,6 +105,12 @@
       "description": "Reference是一个为开发人员分享的快速参考和备忘清单。",
       "icon": "application/reference.png",
       "link": "http://reference.lwaterlite.cc/"
+    },
+    {
+      "title": "ToolLite",
+      "description": "ToolLite是一个在线工具合集。",
+      "icon": "application/toollite.png",
+      "link": "http://toollite.lwaterlite.cc/"
     }
   ]
 }

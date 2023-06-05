@@ -30,17 +30,19 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="wrap" @click="openWindow(link)">
-    <div class="default">
-      <div class="default-icon">
-        <img :src="icon" :alt="title"/>
+  <a :href="link">
+    <div class="wrap" @click="openWindow(link)">
+      <div class="default">
+        <div class="default-icon">
+          <img :src="icon" :alt="title"/>
+        </div>
+        <span>{{ title }}</span>
       </div>
-      <span>{{ title }}</span>
+      <div class="hover">
+        <span>{{ description }}</span>
+      </div>
     </div>
-    <div class="hover">
-      <span>{{ description }}</span>
-    </div>
-  </div>
+  </a>
 </template>
 
 <style scoped>
