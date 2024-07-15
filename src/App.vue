@@ -59,7 +59,7 @@
       </div>
       <div class="footer">
         <div class="page-button">
-          <img src="./assets/down-arrow.png" alt="down" @click="pageScrollHandle(1)"/>
+          <img src="./assets/down-arrow.png" alt="down" @click.prevent="pageScrollHandle(1)"/>
         </div>
       </div>
     </div>
@@ -71,7 +71,7 @@
     <div class="container">
       <div class="header">
         <div class="page-button">
-          <img src="./assets/upper-arrow.png" alt="upper" @click="pageScrollHandle(0)">
+          <img src="./assets/upper-arrow.png" alt="upper" @click.prevent="pageScrollHandle(0)">
         </div>
       </div>
       <div class="content">
@@ -83,7 +83,7 @@
       </div>
       <div class="footer" ref="twoFooter">
         <div class="page-button">
-          <img src="./assets/down-arrow.png" alt="down" @click="pageScrollHandle(2)">
+          <img src="./assets/down-arrow.png" alt="down" @click.prevent="pageScrollHandle(2)">
         </div>
       </div>
     </div>
@@ -94,7 +94,7 @@
     <div class="fixed-element background" style="background-image: url('/background/message-board.png')"/>
     <div class="header">
       <div class="page-button">
-        <img src="./assets/upper-arrow.png" alt="upper" @click="pageScrollHandle(1)">
+        <img src="./assets/upper-arrow.png" alt="upper" @click.prevent="pageScrollHandle(1)">
       </div>
     </div>
     <div class="content">

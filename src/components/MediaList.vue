@@ -27,7 +27,7 @@ export default defineComponent({
     <ul>
       <li v-for="media in mediaList">
         <a :href="media.naviUrl">
-          <div @click="naviToMedia(media.naviUrl)">
+          <div @click.prevent="naviToMedia(media.naviUrl)">
             <img :src="media.icoUrl" :alt="media.icoUrl"/>
           </div>
         </a>
