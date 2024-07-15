@@ -23,7 +23,6 @@ export default defineComponent({
   },
   methods: {
     openWindow(url) {
-      event
       window.open(url, '_blank')
     }
   }
@@ -31,8 +30,8 @@ export default defineComponent({
 </script>
 
 <template>
-  <a :href="link">
-    <div class="wrap" @click.prevent="openWindow(link)">
+  <a :href="link" target="_blank">
+    <div class="wrap">
       <div class="default">
         <div class="default-icon">
           <img :src="icon" :alt="title"/>
